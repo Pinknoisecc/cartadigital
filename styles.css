@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+header {
+    margin-top: 70px;
+}
+
+.navbar,
+nav {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+nav, .navbar-nav .nav-link, .nav-link {
+    color: #ffffff;
+}
+
+.nav-item:hover .nav-link,
+.navbar-toggler, .navbar-toggler-icon {
+    color: #ff0000;
+}
+
+.ajuste-h1 {
+    font-size: 40px;
+    margin-bottom: 4%;
+}
+
+h1 {
+    font-family: "Lobster", cursive;
+    -webkit-text-stroke: 0.5px #ff0000;
+}
+
+.boton {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    flex: 1;
+}
+
+.menu-container {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden; /* Para ocultar las categorías cuando están cerradas */
+}
+
+.menu-categories {
+    text-align: center;
+    width: 130px;
+    background-color: black;
+    padding: 10px;
+    margin-top: 0.8%;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    transition: max-height 0.3s; /* Agrega una transición suave para la altura máxima */
+}
+
+/* Estilo para cuando el ratón está sobre un botón de categoría */
+.menu-categories button:hover {
+    background-color: red; /* Cambia el fondo a rojo cuando se pasa el ratón por encima */
+    color: white; /* Cambia el color del texto a blanco para que sea legible en el fondo rojo */
+}
+
+.menu-toggle {
+    position: absolute; /* Hace que el botón esté fuera del flujo normal de la página */
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-categories button {
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.menu-items {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: 28%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 4s ease, transform 0.3s ease;
+    -webkit-transition: opacity 4s ease, transform 0.3s ease;
+    -moz-transition: opacity 4s ease, transform 0.3s ease;
+    -ms-transition: opacity 4s ease, transform 0.3s ease;
+    -o-transition: opacity 4s ease, transform 0.3s ease;
+}
+
+.menu-item.active {
+    /* Establece la propiedad "opacity" para controlar la animación de desvanecimiento */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-item h3{
+    margin-top: 7%;
+    font-size: 130%;
+}
+
+.menu-item h3,
+.menu-item p,
+.menu-item p:last-child {
+    text-align: center; /* Centra los elementos específicos dentro del .menu-item */
+    color: white;
+}
+
+.menu-item img {
+    width: 100%; /* Establece un ancho del 100% para que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener las proporciones originales */
+    max-height: 300px; /* Establece una altura máxima para evitar que las imágenes sean demasiado grandes */
+}
+
+/* Agrega un estilo de zoom a los productos cuando el ratón está sobre ellos */
+.menu-item:hover {
+    transform: scale(1.05); /* Escala al 105% del tamaño original */
+    transition: transform 0.3s; /* Agrega una transición suave para el efecto de zoom */
+}
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
+footer {
+    background-color: #000000;
+    clear: both;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+
+footer a:hover .fab.fa-facebook-f,
+footer a:hover .fab.fa-instagram {
+    color: #ff0000;
+    transition: color 0.2s ease-in-out;
+}
+
+@media (min-width: 769px) {
+    .menu-categories {
+        max-height: 65vh; /* Asegura que las categorías sean visibles en vista de escritorio */
+    }
+}
+/* Establece las categorías visibles en la vista móvil */
+@media (max-width: 768px) {
+    .menu-categories {
+        max-height: 100vh; /* Asegura que las categorías sean visibles en dispositivos móviles */
+    }
+    .menu-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu-categories {
+        min-height: 30%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+    }
+    .menu-item {
+        width: 20%;
+    }
+}
+
+
+@media (min-width: 953px) {
+    .menu-categories {
+        min-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+    }
+    .menu-item {
+        width: 20%;
+    }
+}
+
+@media (max-width: 953px) {
+    .menu-categories {
+        max-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+    }
+    .menu-item {
+        width: 35%;
+    }
+}
+
+@media (max-width: 690px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-item {
+        width: 50%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+@media (max-width: 530px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-item {
+        width: 80%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+
+
+
+
+

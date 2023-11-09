@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <meta name="description=" content="Revisa nuestra carta y sus valores">
+    <meta name="keywords" content="restaurante, comida, comida casera, cocina italiana, pescados, cena, pastas
+    eventos, reservas, pasteleria, postres, tortas, tartas, bolleria, reposteria, platos de comida, carnes, mariscos,
+    empanadas, pasteles, risotto, carta, menú, valores, costo">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/059eeb8efb.js" crossorigin="anonymous"></script>
+    <script src="./js/DOM.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/animaciones.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_regina + molino.png" width="140" height="60" alt="Logo-navbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="carta.html">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+        <h1 class="text-center text-white pt-5 ajuste-h1">Revisa nuestra carta</h1>    
+
+    <div class="menu-container">
+        <div class="menu-categories">
+            <div class="menu-categories-dropdown" id="menuCategories">
+                <button onclick="filterCategory('entradas')">Entradas y ensaladas</button>
+                <button onclick="filterCategory('compartir')">Para compartir</button>
+                <button onclick="filterCategory('carnes')">Carnes y pescados</button>
+                <button onclick="filterCategory('pastas')">Pastas</button>
+                <button onclick="filterCategory('postres')">Postres</button>
+                <button onclick="filterCategory('cocteleria')">Coctelería</button>
+            </div>
+        </div>
+        <div class="menu-items" id="menu">
+            <!-- Aquí se mostrarán los productos -->
+        </div>
+    </div>
+
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://web.facebook.com/ReginaRestaurantPasteleria" target="_blank" class="text-white mx-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/reginaolmuerestaurante/" target="_blank" class="text-white mx-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-white mb-0">CONOCENOS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--LINK WHATSAPP-->
+    <a href="https://wa.me/+56931760621?text=Me%20gustaría%20saber%20mas%20información" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+    </html>
+    
