@@ -247,6 +247,27 @@ footer a:hover .fab.fa-instagram {
     }
 }
 
+/* Estilos para el botón de volver arriba */
+.scroll-top-button {
+    display: none; /* Inicialmente, oculta el botón */
+    position: fixed;
+    bottom: 44.5px;
+    left: 20px; /* Posición en el lado izquierdo */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.scroll-top-button:hover {
+    background-color: #555; /* Cambia el fondo al pasar el ratón por encima */
+    transition: background-color 0.3s; /* Agrega una transición de color suave */
+}
+
 
 
 
