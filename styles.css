@@ -224,8 +224,6 @@ footer a:hover .fab.fa-instagram {
     }
 }
 
-
-
 @media (min-width: 1200px) {
     .menu-categories {
         min-height: 30%; /* Asegura que las categorías sean visibles en dispositivos móviles */
@@ -242,17 +240,17 @@ footer a:hover .fab.fa-instagram {
         margin-top: 14%;
     }
     .menu-item {
-        width: 20%;
+        width: 23%;
     }
 }
 
 @media (max-width: 953px) {
     .menu-categories {
         max-height: 75%; /* Asegura que las categorías sean visibles en dispositivos móviles */
-        margin-top: 25%;
+        margin-top: 19%;
     }
     .menu-item {
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -271,6 +269,7 @@ footer a:hover .fab.fa-instagram {
     .menu-items {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     
     .menu-item {
@@ -301,15 +300,16 @@ footer a:hover .fab.fa-instagram {
 @media (max-width: 467px) {
     .menu-categories {
         max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
-        margin-top: 50%;
+        margin-top: 19%;
     }
 }
+
 /* Estilos para el botón de volver arriba */
 .scroll-top-button {
     display: none; /* Inicialmente, oculta el botón */
     position: fixed;
     bottom: 44.5px;
-    left: 110px; /* Posición en el lado izquierdo */
+    left: 40px; /* Posición en el lado izquierdo */
     background-color: #333;
     color: white;
     border: none;
