@@ -33,6 +33,7 @@ nav, .navbar-nav .nav-link, .nav-link {
 .ajuste-h1 {
     font-size: 40px;
     margin-bottom: 4%;
+    margin-left: 10%;
 }
 
 h1 {
@@ -56,15 +57,18 @@ h1 {
 
 .menu-categories {
     text-align: center;
-    width: 130px;
+    width: 133px;
     background-color: black;
     padding: 10px;
-    margin-top: 0.8%;
-    position: sticky;
+    margin-top: 10%;
+    position: fixed;
     top: 0;
-    max-height: 100vh;
     overflow-y: auto;
-    transition: max-height 0.3s; /* Agrega una transición suave para la altura máxima */
+    transition: max-height 1s;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
 }
 
 /* Estilo para cuando el ratón está sobre un botón de categoría */
@@ -99,6 +103,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 150px; /* Ajusta según el ancho de tu menú de categorías */
+    padding: 20px; /* Para compensar el espacio dejado por el menú de categorías */
+    overflow-y: auto; /* Agrega scroll solo a los productos */
 }
 
 .menu-item {
@@ -171,8 +178,8 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    margin: 0;
-    margin-top: 40px;
+    margin: 30 0;
+    margin-top: 50px;
 }
 
 
@@ -184,7 +191,8 @@ footer a:hover .fab.fa-instagram {
 
 @media (min-width: 769px) {
     .menu-categories {
-        max-height: 65vh; /* Asegura que las categorías sean visibles en vista de escritorio */
+        max-height: 72vh; /* Asegura que las categorías sean visibles en vista de escritorio */
+        margin-top: 17%;
     }
 }
 /* Establece las categorías visibles en la vista móvil */
@@ -196,6 +204,27 @@ footer a:hover .fab.fa-instagram {
         width: 50%;
     }
 }
+
+/* Establece las categorías visibles en la vista móvil */
+@media (min-width: 767px) {
+    .ajuste-h1 {
+        margin-left: 20%;
+    }
+    .menu-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 767px) {
+    .ajuste-h1 {
+        margin-left: 15%;
+    }
+    .menu-item {
+        width: 50%;
+    }
+}
+
+
 
 @media (min-width: 1200px) {
     .menu-categories {
@@ -210,6 +239,7 @@ footer a:hover .fab.fa-instagram {
 @media (min-width: 953px) {
     .menu-categories {
         min-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        margin-top: 14%;
     }
     .menu-item {
         width: 20%;
@@ -218,7 +248,8 @@ footer a:hover .fab.fa-instagram {
 
 @media (max-width: 953px) {
     .menu-categories {
-        max-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        max-height: 75%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        margin-top: 25%;
     }
     .menu-item {
         width: 35%;
@@ -247,12 +278,38 @@ footer a:hover .fab.fa-instagram {
     }
 }
 
+@media (max-width: 612px) {
+    .ajuste-h1 {
+        margin-left: 21%;
+        font-size: 240%;
+    }
+    .menu-item {
+        width: 80%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+@media (max-width: 484px) {
+    .ajuste-h1 {
+        margin-left: 29%;
+        font-size: 180%;
+    }
+    .menu-item {
+        width: 80%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+@media (max-width: 467px) {
+    .menu-categories {
+        max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        margin-top: 50%;
+    }
+}
 /* Estilos para el botón de volver arriba */
 .scroll-top-button {
     display: none; /* Inicialmente, oculta el botón */
     position: fixed;
     bottom: 44.5px;
-    left: 20px; /* Posición en el lado izquierdo */
+    left: 110px; /* Posición en el lado izquierdo */
     background-color: #333;
     color: white;
     border: none;
