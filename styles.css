@@ -237,7 +237,7 @@ footer a:hover .fab.fa-instagram {
 @media (min-width: 953px) {
     .menu-categories {
         min-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
-        margin-top: 14%;
+        margin-top: 11%;
     }
     .menu-item {
         width: 23%;
@@ -246,8 +246,7 @@ footer a:hover .fab.fa-instagram {
 
 @media (max-width: 953px) {
     .menu-categories {
-        max-height: 75%; /* Asegura que las categorías sean visibles en dispositivos móviles */
-        margin-top: 19%;
+        margin-top: 17%;
     }
     .menu-item {
         width: 40%;
@@ -290,26 +289,53 @@ footer a:hover .fab.fa-instagram {
 @media (max-width: 484px) {
     .ajuste-h1 {
         margin-left: 29%;
-        font-size: 180%;
+        font-size: 160%;
     }
     .menu-item {
-        width: 80%; /* Ocupa todo el ancho disponible */
+        width: 83%; /* Ocupa todo el ancho disponible */
     }
 }
 
 @media (max-width: 467px) {
     .menu-categories {
         max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
-        margin-top: 26%;
+        margin-top: 40%;
+    }
+    .menu-items{
+        margin-left: 112px;
     }
 }
+
+@media (max-width: 467x) {
+    .menu-categories {
+        max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        margin-top: 46%;
+    }  
+}
+
+@media (max-width: 1200px){
+    .scroll-top-button {
+        margin-left: 40px;
+    }
+    }
+
+@media (max-width: 991px){
+.scroll-top-button {
+    margin-left: 40px;
+}
+}
+
+@media (min-width: 767px){
+    .scroll-top-button {
+        margin-left: 40px;
+    }
+    }
 
 /* Estilos para el botón de volver arriba */
 .scroll-top-button {
     display: none; /* Inicialmente, oculta el botón */
     position: fixed;
     bottom: 44.5px;
-    left: 40px; /* Posición en el lado izquierdo */
     background-color: #333;
     color: white;
     border: none;
