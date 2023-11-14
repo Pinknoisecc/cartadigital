@@ -30,6 +30,7 @@ nav, .navbar-nav .nav-link, .nav-link {
     color: #ff0000;
 }
 
+/*CARTA*/
 .ajuste-h1 {
     font-size: 40px;
     margin-bottom: 4%;
@@ -41,18 +42,10 @@ h1 {
     -webkit-text-stroke: 0.5px #ff0000;
 }
 
-.boton {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    flex: 1;
-}
-
 .menu-container {
     display: flex;
     max-width: 100%;
-    overflow: hidden; /* Para ocultar las categorías cuando están cerradas */
+    overflow: hidden; 
 }
 
 .menu-categories {
@@ -71,14 +64,13 @@ h1 {
     -o-transition: max-height 1s;
 }
 
-/* Estilo para cuando el ratón está sobre un botón de categoría */
 .menu-categories button:hover {
-    background-color: red; /* Cambia el fondo a rojo cuando se pasa el ratón por encima */
-    color: white; /* Cambia el color del texto a blanco para que sea legible en el fondo rojo */
+    background-color: red; 
+    color: white; 
 }
 
 .menu-toggle {
-    position: absolute; /* Hace que el botón esté fuera del flujo normal de la página */
+    position: absolute; 
     top: 0;
     left: 0;
     background-color: #f1f1f1;
@@ -103,9 +95,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 150px; /* Ajusta según el ancho de tu menú de categorías */
-    padding: 20px; /* Para compensar el espacio dejado por el menú de categorías */
-    overflow-y: auto; /* Agrega scroll solo a los productos */
+    margin-left: 150px; 
+    padding: 20px; 
+    overflow-y: auto; 
 }
 
 .menu-item {
@@ -125,7 +117,6 @@ h1 {
 }
 
 .menu-item.active {
-    /* Establece la propiedad "opacity" para controlar la animación de desvanecimiento */
     opacity: 1;
     transform: translateY(0);
 }
@@ -138,22 +129,22 @@ h1 {
 .menu-item h3,
 .menu-item p,
 .menu-item p:last-child {
-    text-align: center; /* Centra los elementos específicos dentro del .menu-item */
+    text-align: center; 
     color: white;
 }
 
 .menu-item img {
-    width: 100%; /* Establece un ancho del 100% para que las imágenes ocupen todo el ancho del contenedor */
-    height: auto; /* Ajusta automáticamente la altura para mantener las proporciones originales */
-    max-height: 300px; /* Establece una altura máxima para evitar que las imágenes sean demasiado grandes */
+    width: 100%; 
+    height: auto;
+    max-height: 300px; 
 }
 
-/* Agrega un estilo de zoom a los productos cuando el ratón está sobre ellos */
 .menu-item:hover {
-    transform: scale(1.05); /* Escala al 105% del tamaño original */
-    transition: transform 0.3s; /* Agrega una transición suave para el efecto de zoom */
+    transform: scale(1.05); 
+    transition: transform 0.3s; 
 }
 
+/*LINK WHATSAPP*/
 .whatsapp {
     position: fixed;
     width: 60px;
@@ -172,6 +163,7 @@ h1 {
     margin-top: 13px;
 }
 
+/*FOOTER*/
 footer {
     background-color: #000000;
     clear: both;
@@ -191,21 +183,20 @@ footer a:hover .fab.fa-instagram {
 
 @media (min-width: 769px) {
     .menu-categories {
-        max-height: 72vh; /* Asegura que las categorías sean visibles en vista de escritorio */
+        max-height: 72vh; 
         margin-top: 17%;
     }
 }
-/* Establece las categorías visibles en la vista móvil */
+
 @media (max-width: 768px) {
     .menu-categories {
-        max-height: 100vh; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        max-height: 100vh; 
     }
     .menu-item {
         width: 50%;
     }
 }
 
-/* Establece las categorías visibles en la vista móvil */
 @media (min-width: 767px) {
     .ajuste-h1 {
         margin-left: 20%;
@@ -226,17 +217,16 @@ footer a:hover .fab.fa-instagram {
 
 @media (min-width: 1200px) {
     .menu-categories {
-        min-height: 30%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        min-height: 30%; 
     }
     .menu-item {
         width: 20%;
     }
 }
 
-
 @media (min-width: 953px) {
     .menu-categories {
-        min-height: 48%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        min-height: 48%; 
         margin-top: 11%;
     }
     .menu-item {
@@ -260,7 +250,7 @@ footer a:hover .fab.fa-instagram {
     }
     
     .menu-item {
-        width: 50%; /* Ocupa todo el ancho disponible */
+        width: 50%; 
     }
 }
 
@@ -272,7 +262,7 @@ footer a:hover .fab.fa-instagram {
     }
     
     .menu-item {
-        width: 80%; /* Ocupa todo el ancho disponible */
+        width: 80%; 
     }
 }
 
@@ -282,7 +272,7 @@ footer a:hover .fab.fa-instagram {
         font-size: 240%;
     }
     .menu-item {
-        width: 80%; /* Ocupa todo el ancho disponible */
+        width: 80%; 
     }
 }
 
@@ -292,13 +282,13 @@ footer a:hover .fab.fa-instagram {
         font-size: 160%;
     }
     .menu-item {
-        width: 83%; /* Ocupa todo el ancho disponible */
+        width: 83%; 
     }
 }
 
 @media (max-width: 467px) {
     .menu-categories {
-        max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        max-height: 70%; 
         margin-top: 40%;
     }
     .menu-items{
@@ -308,7 +298,7 @@ footer a:hover .fab.fa-instagram {
 
 @media (max-width: 467x) {
     .menu-categories {
-        max-height: 70%; /* Asegura que las categorías sean visibles en dispositivos móviles */
+        max-height: 70%; 
         margin-top: 46%;
     }  
 }
@@ -331,9 +321,9 @@ footer a:hover .fab.fa-instagram {
     }
     }
 
-/* Estilos para el botón de volver arriba */
+/*BOTON SCROLL*/
 .scroll-top-button {
-    display: none; /* Inicialmente, oculta el botón */
+    display: none; 
     position: fixed;
     bottom: 44.5px;
     background-color: #333;
@@ -347,8 +337,8 @@ footer a:hover .fab.fa-instagram {
 }
 
 .scroll-top-button:hover {
-    background-color: #555; /* Cambia el fondo al pasar el ratón por encima */
-    transition: background-color 0.3s; /* Agrega una transición de color suave */
+    background-color: #555; 
+    transition: background-color 0.3s; 
 }
 
 

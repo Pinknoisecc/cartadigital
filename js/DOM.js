@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Mostrar todos los productos al cargar la página
-    filterCategory('pastas');
+    const storedCategory = localStorage.getItem('selectedCategory');
+
+    filterCategory(storedCategory || 'pastas');
 });
 
-// Función para mostrar/ocultar las opciones de categoría
 function toggleCategories() {
     const menuCategories = document.getElementById('menuCategories');
     menuCategories.style.display = (menuCategories.style.display === 'block') ? 'none' : 'block';
@@ -13,7 +13,14 @@ function filterCategory(category) {
     const menuContainer = document.getElementById('menu');
     menuContainer.innerHTML = '';
 
+    const storedMenu = localStorage.getItem('menu');
+    const menu = storedMenu ? JSON.parse(storedMenu) : [];
+
     const filteredItems = menu.find(item => item.category === category).items;
+
+    localStorage.setItem('menu', JSON.stringify(menu));
+
+    localStorage.setItem('selectedCategory', category);
 
     filteredItems.forEach(item => {
         const itemDiv = document.createElement('div');
@@ -25,5 +32,8 @@ function filterCategory(category) {
             <p>${item.price}</p>
         `;
         menuContainer.appendChild(itemDiv);
+        setTimeout(() => {
+            itemDiv.classList.add('active');
+        }, 10);
     });
 }

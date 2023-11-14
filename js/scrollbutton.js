@@ -7,11 +7,9 @@ window.onscroll = function () {
     }
 };
 
-// Función para desplazarse hacia arriba con animación suave
 function scrollToTop() {
     const scrollToTopButton = document.getElementById('scrollTopButton');
 
-    // Desplazarse hacia arriba con animación suave
     const scrollToTop = () => {
         const c = document.documentElement.scrollTop || document.body.scrollTop;
         if (c > 0) {
@@ -20,8 +18,7 @@ function scrollToTop() {
         }
     };
 
-    scrollToTop(); // Llama a la función de desplazamiento suave
+    scrollToTop(); 
 
-    // Puedes agregar más animaciones aquí, como cambiar el color o el ícono del botón
     scrollToTopButton.style.backgroundColor = '#333';
 }

@@ -1,4 +1,3 @@
-// Función para filtrar la categoría con animación de desvanecimiento
 function filterCategory(category) {
     const menuContainer = document.getElementById('menu');
     menuContainer.innerHTML = '';
@@ -15,7 +14,6 @@ function filterCategory(category) {
             <p>${item.price}</p>
         `;
         menuContainer.appendChild(itemDiv);
-        // Aplica la clase "active" para activar la animación de desvanecimiento
         setTimeout(() => {
             itemDiv.classList.add('active');
         }, 10);
